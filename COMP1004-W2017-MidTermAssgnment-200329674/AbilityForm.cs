@@ -51,12 +51,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         {
             Character character = new Character();
 
-            character.CharSTR = STRTextBox.Text;
-            character.CharDEX = DEXTextBox.Text;
-            character.CharEND = ENDTextBox.Text;
-            character.CharINT = INTTextBox.Text;
-            character.CharPER = PERTextBox.Text;
-            character.CharCHA = CHATextBox.Text;
+            character.charSTR = Convert.ToInt32(STRTextBox.Text);
+            character.charDEX = Convert.ToInt32(DEXTextBox.Text);
+            character.charEND = Convert.ToInt32(ENDTextBox.Text);
+            character.charINT = Convert.ToInt32(INTTextBox.Text);
+            character.charPER = Convert.ToInt32(PERTextBox.Text);
+            character.charCHA = Convert.ToInt32(CHATextBox.Text);
 
             Hide();
 

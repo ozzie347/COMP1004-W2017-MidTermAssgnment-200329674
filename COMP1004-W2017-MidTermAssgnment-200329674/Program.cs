@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200329674
 {
-    static class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.
