@@ -95,10 +95,10 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
                 }
                 else throw new Exception();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Please select a race", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Console.Write(ex);
+                return;
             }
 
             Hide();

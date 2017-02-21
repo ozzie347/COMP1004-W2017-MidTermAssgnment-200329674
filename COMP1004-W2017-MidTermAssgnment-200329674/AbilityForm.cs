@@ -51,13 +51,40 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         {
             Character character = new Character();
 
-            character.charSTR = Convert.ToInt32(STRTextBox.Text);
-            character.charDEX = Convert.ToInt32(DEXTextBox.Text);
-            character.charEND = Convert.ToInt32(ENDTextBox.Text);
-            character.charINT = Convert.ToInt32(INTTextBox.Text);
-            character.charPER = Convert.ToInt32(PERTextBox.Text);
-            character.charCHA = Convert.ToInt32(CHATextBox.Text);
-
+            try
+            {
+                if(STRTextBox.Text != null)
+                {
+                    character.charSTR = Convert.ToInt32(STRTextBox.Text);
+                }
+                if(DEXTextBox.Text != null)
+                {
+                    character.charDEX = Convert.ToInt32(DEXTextBox.Text);  
+                }
+                if(INTTextBox.Text != null)
+                {
+                    character.charEND = Convert.ToInt32(ENDTextBox.Text);
+                }
+                if(ENDTextBox.Text != null)
+                {
+                    character.charINT = Convert.ToInt32(INTTextBox.Text);
+                }                
+                if(PERTextBox.Text != null)
+                {
+                    character.charPER = Convert.ToInt32(PERTextBox.Text);
+                }
+                if(CHATextBox.Text != null)
+                {
+                    character.charCHA = Convert.ToInt32(CHATextBox.Text);
+                }
+                else throw new Exception();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Please roll or enter abilities", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
             Hide();
 
             RaceForm raceForm = new RaceForm();
