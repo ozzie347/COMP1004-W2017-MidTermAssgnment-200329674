@@ -49,7 +49,20 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            
+            Character character = new Character();
+
+            character.CharSTR = STRTextBox.Text;
+            character.CharDEX = DEXTextBox.Text;
+            character.CharEND = ENDTextBox.Text;
+            character.CharINT = INTTextBox.Text;
+            character.CharPER = PERTextBox.Text;
+            character.CharCHA = CHATextBox.Text;
+
+            Hide();
+
+            RaceForm raceForm = new RaceForm();
+
+            raceForm.Show();
         }
     }
 }
