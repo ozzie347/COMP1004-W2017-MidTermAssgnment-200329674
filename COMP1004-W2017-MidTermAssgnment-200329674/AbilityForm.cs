@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**
+App: COMP1004-Midterm
+Author: Nicholas Oshukany
+Last Modified: 02/24/2017
+Description: This program creates a character sheet for role-playing
+*/
+
+using System;
 using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200329674
@@ -37,6 +36,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             return result;
         }
 
+        //Roll button click event handler
         private void RollButton_Click(object sender, EventArgs e)
         {
             STRTextBox.Text = (Roll3D10().ToString());
@@ -47,6 +47,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             CHATextBox.Text = (Roll3D10().ToString());
         }
 
+        /// <summary>
+        /// Saves the roll values to the character object or provides an error if values are blank.
+        /// Hides the AbilityForm and starts the RaceForm.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             try

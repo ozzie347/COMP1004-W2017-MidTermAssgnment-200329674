@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**
+App: COMP1004-Midterm
+Author: Nicholas Oshukany
+Last Modified: 02/24/2017
+Description: This program creates a character sheet for role-playing
+*/
+
+using System;
 using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200329674
@@ -17,6 +17,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             InitializeComponent();
         }
 
+        //If Soldier radio is selected show calculated health
         private void soldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if(soldierRadioButton.Checked == true)
@@ -25,6 +26,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             }
         }
 
+        //If Rogue radio is selected show calculated health
         private void rogueRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if(rogueRadioButton.Checked == true)
@@ -33,6 +35,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             }
         }
 
+        //If Magicker radio is selected show calculated health
         private void magickerRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if(magickerRadioButton.Checked == true)
@@ -41,6 +44,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             }
         }
 
+        //If Cultist radio is selected show calculated health
         private void cultistRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if(cultistRadioButton.Checked == true)
@@ -49,6 +53,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             }
         }
 
+        /// <summary>
+        /// Save the calculated health in the character object or show error if blank.
+        /// Hide the form and show the FinalForm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             try
@@ -56,6 +66,22 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
                 if (healthTextBox.Text != "")
                 {
                     Program.character.health = Convert.ToInt32(healthTextBox.Text);
+                }
+                if(soldierRadioButton.Checked == true)
+                {
+                    Program.character.job = "Soldier";
+                }
+                else if(rogueRadioButton.Checked == true)
+                {
+                    Program.character.job = "Rogue";
+                }
+                else if(magickerRadioButton.Checked == true)
+                {
+                    Program.character.job = "Magicker";
+                }
+                else if(cultistRadioButton.Checked == true)
+                {
+                    Program.character.job = "Cultist";
                 }
                 else throw new Exception();
             }

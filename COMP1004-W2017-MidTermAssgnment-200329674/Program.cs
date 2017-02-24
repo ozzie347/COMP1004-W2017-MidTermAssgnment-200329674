@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200329674
 {
     public class Program
     {
+        //Character object
         public static Character character = new Character();
 
         /// <summary>
