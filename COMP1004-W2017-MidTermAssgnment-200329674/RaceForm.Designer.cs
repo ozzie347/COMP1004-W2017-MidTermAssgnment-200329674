@@ -100,7 +100,6 @@
             this.halflingRadioButton.Name = "halflingRadioButton";
             this.halflingRadioButton.Size = new System.Drawing.Size(80, 21);
             this.halflingRadioButton.TabIndex = 3;
-            this.halflingRadioButton.TabStop = true;
             this.halflingRadioButton.Text = "Halfling ";
             this.halflingRadioButton.UseVisualStyleBackColor = true;
             this.halflingRadioButton.CheckedChanged += new System.EventHandler(this.halflingRadioButton_CheckedChanged);
@@ -112,7 +111,6 @@
             this.elfRadioButton.Name = "elfRadioButton";
             this.elfRadioButton.Size = new System.Drawing.Size(45, 21);
             this.elfRadioButton.TabIndex = 2;
-            this.elfRadioButton.TabStop = true;
             this.elfRadioButton.Text = "Elf";
             this.elfRadioButton.UseVisualStyleBackColor = true;
             this.elfRadioButton.CheckedChanged += new System.EventHandler(this.elfRadioButton_CheckedChanged);
@@ -124,7 +122,6 @@
             this.dwarfRadioButton.Name = "dwarfRadioButton";
             this.dwarfRadioButton.Size = new System.Drawing.Size(65, 21);
             this.dwarfRadioButton.TabIndex = 1;
-            this.dwarfRadioButton.TabStop = true;
             this.dwarfRadioButton.Text = "Dwarf";
             this.dwarfRadioButton.UseVisualStyleBackColor = true;
             this.dwarfRadioButton.CheckedChanged += new System.EventHandler(this.dwarfRadioButton_CheckedChanged);
@@ -136,7 +133,6 @@
             this.humanRadioButton.Name = "humanRadioButton";
             this.humanRadioButton.Size = new System.Drawing.Size(74, 21);
             this.humanRadioButton.TabIndex = 0;
-            this.humanRadioButton.TabStop = true;
             this.humanRadioButton.Text = "Human";
             this.humanRadioButton.UseVisualStyleBackColor = true;
             this.humanRadioButton.CheckedChanged += new System.EventHandler(this.humanRadioButton_CheckedChanged);

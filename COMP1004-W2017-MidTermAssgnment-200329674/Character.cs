@@ -15,5 +15,6 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         public int charPER { get; set; }
         public int charCHA { get; set; }
         public string race { get; set; }
+        public int health { get; set; }
     }
 }

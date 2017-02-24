@@ -81,15 +81,15 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
                 {
                     character.race = "Human";
                 }
-                if (dwarfRadioButton.Checked == true)
+                else if (dwarfRadioButton.Checked == true)
                 {
                     character.race = "Dwarf";
                 }
-                if (elfRadioButton.Checked == true)
+                else if (elfRadioButton.Checked == true)
                 {
                     character.race = "Elf";
                 }
-                if (halflingRadioButton.Checked == true)
+                else if (halflingRadioButton.Checked == true)
                 {
                     character.race = "Halfling";
                 }
