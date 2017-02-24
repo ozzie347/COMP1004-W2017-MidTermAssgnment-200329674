@@ -6,6 +6,7 @@ Description: This program creates a character sheet for role-playing
 */
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200329674
@@ -77,9 +78,51 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         //Bring up the FontDialog from the menu options
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FontDialog fontDialog = new FontDialog();
+            //Show the dialog
+            DialogResult result = fontDialog.ShowDialog();
 
-            fontDialog.ShowDialog();
+            //See if OK was pressed
+            if(result == DialogResult.OK)
+            {
+                //Get font
+                Font font = fontDialog.Font;
+
+                //Set the TextBox/Label properties
+                charInfoGroupBox1.Font = font;
+                nameLabel.Font = font;
+                nameTextBox.Font = font;
+                ageLabel.Font = font;
+                ageTextBox.Font = font;
+                heightLabel.Font = font;
+                heightTextBox.Font = font;
+                weightLabel.Font = font;
+                weightTextBox.Font = font;
+                titlesLabel.Font = font;
+                titlesTextBox.Font = font;
+
+                jobLabel.Font = font;
+                jobTextBox.Font = font;
+                raceLabel.Font = font;
+                raceTextBox.Font = font;
+                healthLabel.Font = font;
+                healthTextBox.Font = font;
+
+                abilitiesGroupBox.Font = font;
+                strLabel.Font = font;
+                strTextBox.Font = font;
+                dexLabel.Font = font;
+                dexTextBox.Font = font;
+                endLabel.Font = font;
+                endTextBox.Font = font;
+                intLabel.Font = font;
+                intTextBox.Font = font;
+                perLabel.Font = font;
+                perTextBox.Font = font;
+                chaLabel.Font = font;
+                chaTextBox.Font = font;
+
+                exitButton.Font = font;
+            }
         }
     }
 }

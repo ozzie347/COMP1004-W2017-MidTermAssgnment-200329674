@@ -68,6 +68,8 @@
             this.strLabel = new System.Windows.Forms.Label();
             this.fontDialog = new System.Windows.Forms.FontDialog();
             this.racePictureBox = new System.Windows.Forms.PictureBox();
+            this.titlesLabel = new System.Windows.Forms.Label();
+            this.titlesTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip.SuspendLayout();
             this.charInfoGroupBox1.SuspendLayout();
             this.charInfoGroupBox2.SuspendLayout();
@@ -143,6 +145,8 @@
             // 
             // charInfoGroupBox1
             // 
+            this.charInfoGroupBox1.Controls.Add(this.titlesTextBox);
+            this.charInfoGroupBox1.Controls.Add(this.titlesLabel);
             this.charInfoGroupBox1.Controls.Add(this.weightTextBox);
             this.charInfoGroupBox1.Controls.Add(this.weightLabel);
             this.charInfoGroupBox1.Controls.Add(this.heightTextBox);
@@ -153,7 +157,7 @@
             this.charInfoGroupBox1.Controls.Add(this.nameLabel);
             this.charInfoGroupBox1.Location = new System.Drawing.Point(13, 32);
             this.charInfoGroupBox1.Name = "charInfoGroupBox1";
-            this.charInfoGroupBox1.Size = new System.Drawing.Size(348, 111);
+            this.charInfoGroupBox1.Size = new System.Drawing.Size(348, 152);
             this.charInfoGroupBox1.TabIndex = 7;
             this.charInfoGroupBox1.TabStop = false;
             this.charInfoGroupBox1.Text = "Character Information";
@@ -184,7 +188,7 @@
             // heightLabel
             // 
             this.heightLabel.AutoSize = true;
-            this.heightLabel.Location = new System.Drawing.Point(10, 73);
+            this.heightLabel.Location = new System.Drawing.Point(7, 72);
             this.heightLabel.Name = "heightLabel";
             this.heightLabel.Size = new System.Drawing.Size(53, 17);
             this.heightLabel.TabIndex = 4;
@@ -289,7 +293,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(545, 421);
+            this.exitButton.Location = new System.Drawing.Point(545, 456);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(84, 33);
             this.exitButton.TabIndex = 9;
@@ -311,9 +315,9 @@
             this.abilitiesGroupBox.Controls.Add(this.endLabel);
             this.abilitiesGroupBox.Controls.Add(this.dexLabel);
             this.abilitiesGroupBox.Controls.Add(this.strLabel);
-            this.abilitiesGroupBox.Location = new System.Drawing.Point(13, 150);
+            this.abilitiesGroupBox.Location = new System.Drawing.Point(13, 184);
             this.abilitiesGroupBox.Name = "abilitiesGroupBox";
-            this.abilitiesGroupBox.Size = new System.Drawing.Size(182, 304);
+            this.abilitiesGroupBox.Size = new System.Drawing.Size(182, 305);
             this.abilitiesGroupBox.TabIndex = 10;
             this.abilitiesGroupBox.TabStop = false;
             this.abilitiesGroupBox.Text = "Abilities:";
@@ -432,18 +436,40 @@
             this.strLabel.TabIndex = 2;
             this.strLabel.Text = "STR";
             // 
+            // fontDialog
+            // 
+            this.fontDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.fontDialog.MaxSize = 18;
+            this.fontDialog.MinSize = 10;
+            // 
             // racePictureBox
             // 
-            this.racePictureBox.Location = new System.Drawing.Point(241, 190);
+            this.racePictureBox.Location = new System.Drawing.Point(201, 190);
             this.racePictureBox.Name = "racePictureBox";
-            this.racePictureBox.Size = new System.Drawing.Size(251, 264);
+            this.racePictureBox.Size = new System.Drawing.Size(332, 299);
             this.racePictureBox.TabIndex = 11;
             this.racePictureBox.TabStop = false;
+            // 
+            // titlesLabel
+            // 
+            this.titlesLabel.AutoSize = true;
+            this.titlesLabel.Location = new System.Drawing.Point(10, 112);
+            this.titlesLabel.Name = "titlesLabel";
+            this.titlesLabel.Size = new System.Drawing.Size(46, 17);
+            this.titlesLabel.TabIndex = 8;
+            this.titlesLabel.Text = "Titles:";
+            // 
+            // titlesTextBox
+            // 
+            this.titlesTextBox.Location = new System.Drawing.Point(62, 106);
+            this.titlesTextBox.Name = "titlesTextBox";
+            this.titlesTextBox.Size = new System.Drawing.Size(279, 22);
+            this.titlesTextBox.TabIndex = 9;
             // 
             // FinalForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(641, 462);
+            this.ClientSize = new System.Drawing.Size(641, 501);
             this.Controls.Add(this.racePictureBox);
             this.Controls.Add(this.abilitiesGroupBox);
             this.Controls.Add(this.exitButton);
@@ -511,5 +537,7 @@
         private System.Windows.Forms.TextBox dexTextBox;
         private System.Windows.Forms.TextBox strTextBox;
         private System.Windows.Forms.FontDialog fontDialog;
+        private System.Windows.Forms.TextBox titlesTextBox;
+        private System.Windows.Forms.Label titlesLabel;
     }
 }
