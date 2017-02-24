@@ -8,6 +8,8 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
 {
     public class Program
     {
+        public static Character character = new Character();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

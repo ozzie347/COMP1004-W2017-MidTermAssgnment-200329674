@@ -17,13 +17,11 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             InitializeComponent();
         }
 
-        Character character = new Character();
-
         private void soldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if(soldierRadioButton.Checked == true)
             {
-                healthTextBox.Text = (30 + character.charEND).ToString();
+                healthTextBox.Text = (30 + Program.character.charEND).ToString();
             }
         }
 
@@ -31,7 +29,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         {
             if(rogueRadioButton.Checked == true)
             {
-                healthTextBox.Text = (28 + character.charDEX).ToString();
+                healthTextBox.Text = (28 + Program.character.charDEX).ToString();
             }
         }
 
@@ -39,7 +37,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         {
             if(magickerRadioButton.Checked == true)
             {
-                healthTextBox.Text = (15 + character.charINT).ToString();
+                healthTextBox.Text = (15 + Program.character.charINT).ToString();
             }
         }
 
@@ -47,7 +45,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
         {
             if(cultistRadioButton.Checked == true)
             {
-                healthTextBox.Text = (24 + character.charCHA).ToString();
+                healthTextBox.Text = (24 + Program.character.charCHA).ToString();
             }
         }
 
@@ -57,7 +55,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
             {
                 if (healthTextBox.Text != "")
                 {
-                    character.health = Convert.ToInt32(healthTextBox.Text);
+                    Program.character.health = Convert.ToInt32(healthTextBox.Text);
                 }
                 else throw new Exception();
             }

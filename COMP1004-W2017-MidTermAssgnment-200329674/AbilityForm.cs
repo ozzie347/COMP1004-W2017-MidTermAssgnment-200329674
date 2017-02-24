@@ -49,33 +49,31 @@ namespace COMP1004_W2017_MidTermAssgnment_200329674
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Character character = new Character();
-
             try
             {
                 if(STRTextBox.Text != null)
                 {
-                    character.charSTR = Convert.ToInt32(STRTextBox.Text);
+                    Program.character.charSTR = Convert.ToInt32(STRTextBox.Text);
                 }
                 if(DEXTextBox.Text != null)
                 {
-                    character.charDEX = Convert.ToInt32(DEXTextBox.Text);  
+                    Program.character.charDEX = Convert.ToInt32(DEXTextBox.Text);  
                 }
                 if(INTTextBox.Text != null)
                 {
-                    character.charEND = Convert.ToInt32(ENDTextBox.Text);
+                    Program.character.charEND = Convert.ToInt32(ENDTextBox.Text);
                 }
                 if(ENDTextBox.Text != null)
                 {
-                    character.charINT = Convert.ToInt32(INTTextBox.Text);
+                    Program.character.charINT = Convert.ToInt32(INTTextBox.Text);
                 }                
                 if(PERTextBox.Text != null)
                 {
-                    character.charPER = Convert.ToInt32(PERTextBox.Text);
+                    Program.character.charPER = Convert.ToInt32(PERTextBox.Text);
                 }
                 if(CHATextBox.Text != null)
                 {
-                    character.charCHA = Convert.ToInt32(CHATextBox.Text);
+                    Program.character.charCHA = Convert.ToInt32(CHATextBox.Text);
                 }
                 else throw new Exception();
             }
